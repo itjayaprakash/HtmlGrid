@@ -1,0 +1,71 @@
+/* Css author J.Jayaprakash */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.left_panel {
+    background: yellow;
+    height: 100%;
+    position: fixed;
+    width: 240px;
+}
+.right_panel {
+    background-color:green;
+    width: 240px;
+    height: 100%;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+.main_section {
+    display: flex;
+    margin-left: 240px;
+    height: 100vh;
+}
+
+.dashboard {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #d2d2d2;
+    height: 100%;
+    overflow-y: auto;
+}
+.col {
+    padding: 16px 16px;
+}
+.card {
+    height: 250px;
+    background-color:  orange;
+    display: block;
+}
+
+@media  (min-width: 320px) {
+    .col {
+        width: 100%;
+    }
+}
+@media  (min-width: 768px) {
+    .col {
+        width: 50%;
+    }
+}
+@media  (min-width: 1200px) {
+    .col {
+        width: 33.333%;
+    }
+}
+@media  (min-width: 1400px) {
+    .col {
+        width: 25%;
+    }
+}
+@media  (min-width: 1600px) {
+    .col {
+        width: 20%;
+    }
+}
