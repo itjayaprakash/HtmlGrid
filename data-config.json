@@ -1,6 +1,4 @@
 {
-    "scrollX": false,
-    "select ": "cell",
     "columns": [
         {
             "id": "rank",
@@ -32,7 +30,6 @@
             "sort": "int"
         }
     ],
-    "autowidth": true,
     "data": [
         {
             "id": 1,
