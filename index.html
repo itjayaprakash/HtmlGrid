@@ -123,6 +123,13 @@
 
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+        
+   if(!window.location.search.substring(1) == "full=true") { // do not redirect if querystring is ?full=true
+      if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/Blackberry/i) || navigator.userAgent.match(/WebOs/i)) { 
+        alert('mobile');
+      }
+    }
+        
     $(document).ready(function(){
         // invoke the carousel
         $('#myCarousel').carousel({
