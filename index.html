@@ -36,7 +36,7 @@
     }
     </style>
     </head>
-<body oncontextmenu="return true" >
+<body oncontextmenu="return false" >
    
     <section class="slide-wrapper">
       
@@ -126,7 +126,7 @@
         
   
       if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/Blackberry/i) || navigator.userAgent.match(/WebOs/i)) { 
-        alert('mobile');
+        document.getElementsByTagName('body')[0].setAttribute("oncontextmenu", "true");
       }
 
     $(document).ready(function(){
